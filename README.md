@@ -1,15 +1,31 @@
+# Pytorch Generative Model
 
-Using mnist Dataset<br>  
-Workspace : colab<br>
-python 3.6.5<br>
 
-no update<br>
-<br>
-## list
-- VAE
-- GAN
-- DCGAN
-<br>
+
+- ## **Installation**
+
+  **Clone this reop:**
+
+  ```shell
+  git clone https://github.com/del-luna/torch_generative_model.git
+  cd torch_generative_model
+  ```
+
+  **Dependencies:**
+
+  All dependencies for defining the environment are provided in `environment/gen_env.yaml`  We recommend running this repository using [Anaconda](https://docs.anaconda.com/anaconda/install/):
+
+  ```shell
+  conda env create -f ./environment/gen_env.yaml
+  ```
+
+  ### Start 
+
+  ```cmd
+  python main.py
+  ```
+
+  <br><br>
 
 ### VAE
 <br>
@@ -36,9 +52,3 @@ no update<br>
 <br>
 
 
-## Requirements<br>
-Pytorch -- 1.3.1
-<br>
-
-## Reference
-[github](https://github.com/pytorch/examples/blob/master/vae/main.py)
