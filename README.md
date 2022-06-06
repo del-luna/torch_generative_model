@@ -4,7 +4,7 @@
 
 - ## **Installation**
 
-  **Clone this reop:**
+  **Clone this repo:**
 
   ```shell
   git clone https://github.com/del-luna/torch_generative_model.git
@@ -16,7 +16,7 @@
   All dependencies for defining the environment are provided in `environment/gen_env.yaml`  We recommend running this repository using [Anaconda](https://docs.anaconda.com/anaconda/install/):
 
   ```shell
-  conda env create -f ./environment/gen_env.yaml
+  conda env create -f ./environment/torch_env.yaml
   ```
 
   ### Start 

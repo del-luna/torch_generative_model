@@ -145,6 +145,15 @@ class VanillaVAE(BaseVAE):
         loss = recons_loss + kld_weight * kld_loss
         return {'loss': loss, 'Reconstruction_Loss':recons_loss.detach(), 'KLD':-kld_loss.detach()}
 
+    '''
+    loss function ver.2
+    '''
+    def loss_function_2(self, x, x_hat, mean, log_var):
+        reproduction_loss = nn.functional.binary_cross_entropy(x_hat, x, reduction='sum')
+        KLD      = - 0.5 * torch.sum(1+ log_var - mean.pow(2) - log_var.exp())
+
+        return reproduction_loss + KLD
+
     def sample(self,
                num_samples:int,
                current_device: int, **kwargs) -> Tensor:
